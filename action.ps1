@@ -54,7 +54,7 @@ try {
     $auditLog = @{
         Action            = 'UpdateAccount'
         System            = 'AzureActiveDirectory'
-        TargetIdentifier  = $form.id
+        TargetIdentifier  = $form.userIdentity
         TargetDisplayName = $formObject.userPrincipalName
         Message           = "AzureActiveDirectory action: [UpdateAccount] for: [$($formObject.UserPrincipalName)] executed successfully"
         IsError           = $false
